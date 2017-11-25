@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = en>
+
+<head>
+	<title>{% block head_title %}My_project{% endblock head_title %}</title>
+	{% include "snippets/css.html" %}
+</head>
+<body>
+	{% include "snippets/nav.html" %}
+	<div class="container">
+		{% block content %}Stuff inside block content{% endblock content %} <!-- IF THERE IS A STUFF INSIDE AND INHERITED CLASS IS MARKED 'SUPER' IT WILL BE PRINTED ! !! -->
+	</div>
+
+	{% include "snippets/js.html" %}
+</body>
+
+</html>

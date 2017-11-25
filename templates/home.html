@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{block.super}} <!-- stuf inside block content in base.html WILL BE PRINTED! -->
+	
+	<h1>Hello World!</h1>
+	{{some_list}}
+{% endblock content %}
